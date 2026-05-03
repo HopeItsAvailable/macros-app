@@ -33,9 +33,11 @@ def clean_data_with_ai(messy_csv_string):
     return json.loads(response.text)
 
 def process_pdf_with_ai(pdf_path):
-    with pdfplumber.open(pdf_path) as pdf:
-        first_page = pdf.pages[0]
+    all_clean_data = [] #need to split page output to bypass token limit, so this will hold all json objects
+    saved_header_csv = "" #give ai context needed of ordering of columns
     
+    with pdfplumber.open(pdf_path) as pdf:
+        
         table_settings = {
             "vertical_strategy": "lines",
             "horizontal_strategy": "lines",
@@ -43,30 +45,39 @@ def process_pdf_with_ai(pdf_path):
             "intersection_tolerance": 15,
             "snap_tolerance": 5,
         }
-        #DEBUG cropped image
-        im = first_page.to_image(resolution=300)
-        im.debug_tablefinder(table_settings = table_settings) #shows detected table lines
-        im.save("debug_cropped.png")
-        
-        table = first_page.extract_table(table_settings)
-        
-        #Load into pandas DataFrame
-        df = pd.DataFrame(table)
-        df.replace("", pd.NA, inplace=True)
-        df.dropna(how='all', axis=1, inplace=True)
-        
-        #convert the table to a raw CSV string
-        messy_csv = df.to_csv(index=False, header=False)
-        print(messy_csv) #DEBUG
-        
-        #clean with AI
-        clean_data = clean_data_with_ai(messy_csv)
-        
+        for i, page in enumerate(pdf.pages):
+            print(f"Extracting Page {i+1}...")
+            table = page.extract_table(table_settings)
+            
+            if not table:
+                continue
+            
+            # Load into pandas DataFrame
+            df = pd.DataFrame(table)
+            df.replace("", pd.NA, inplace=True)
+            df.dropna(how='all', axis=1, inplace=True)
+            
+            # convert just this page to CSV
+            page_csv = df.to_csv(index=False, header=False)
+                
+            #DEBUG - show detected table lines
+            # im = page.to_image(resolution=300)
+            # im.debug_tablefinder(table_settings = table_settings) 
+            # im.save(f"debug_cropped_page_{i+1}.png")
+            
+            try:
+                # clean with AI - page by page
+                page_clean_data = clean_data_with_ai(page_csv)
+                # append to master list of data
+                all_clean_data.extend(page_clean_data)
+            except Exception as e:
+                print(f"Failed to parse JSON on page {i+1}. Error: {e}")
+                continue # skip the errored page and keep going
+            
         #convert back to DataFrame and save
-        final_df = pd.DataFrame(clean_data)
+        final_df = pd.DataFrame(all_clean_data)
         final_df.to_csv("ai_cleaned_output.csv", index=False)
-        
-        print("Done! Check 'ai_cleaned_output.csv'.")
+        print(f"Done! Extracted {len(final_df)} items. Check 'ai_cleaned_full_menu.csv'.")
 
 if __name__ == "__main__":
     process_pdf_with_ai("sample_menu.pdf")
