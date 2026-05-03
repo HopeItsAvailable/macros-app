@@ -5,6 +5,11 @@ __pycache__/
 # Virtual environments
 venv/
 env/
+*env*
 
-# Downloaded menus (keep these local)
+# for menus (keep these local)
 *.pdf
+
+# testing outputs, debug imgs
+*debug*
+*output.csv

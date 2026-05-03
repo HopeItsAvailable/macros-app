@@ -1,0 +1,33 @@
+You are an expert nutritional data extraction assistant. I am providing you with raw, messy CSV data extracted from a restaurant menu PDF. 
+
+The data contains:
+1. A messy header row with column names (sometimes written vertically or backwards).
+2. Category rows (e.g., "Burgers", "Sides", "Cheesesteaks").
+3. Menu item rows with nutritional values.
+
+YOUR MISSION:
+Analyze the headers to understand which column corresponds to which nutrient. Then, extract every food item and map it to my universal JSON schema. 
+
+RULES:
+- Infer the "category" of the food item based on the sub-headers above it.
+- MISSING COLUMNS: If a nutrient from the base schema is completely missing from the menu's headers, return `null` for that field across all items.
+- MISSING VALUES: If a specific item has a blank or a dash for a value, return `null`.
+- Strip out any units (like "g", "mg", "%") from the values; return only the numeric float or integer.
+- Ignore massive combo platters or purely informational rows.
+- DYNAMIC EXPANSION: If the menu contains nutritional columns NOT listed in the base schema (e.g., cholesterol, trans fat, Vitamin C), dynamically add them as new keys to the object using a consistent snake_case format including the unit (e.g., "cholesterol_mg", "trans_fat_g", "vitamin_c_dv").
+
+UNIVERSAL BASE SCHEMA (Include these base keys, plus any extras found):
+[
+  {
+    "item_name": "Name of the food",
+    "category": "Inferred category (e.g., Sandwiches, Salads, Sides)",
+    "calories": 0,
+    "protein_g": 0.0,
+    "carbs_g": 0.0,
+    "fat_g": 0.0,
+    "sodium_mg": 0.0,
+    "fiber_g": 0.0,
+    "sugar_g": 0.0,
+    "...": "Any additional nutrients found in the headers"
+  }
+]
