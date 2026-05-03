@@ -13,7 +13,7 @@ RULES:
 - MISSING COLUMNS: If a nutrient from the base schema is completely missing from the menu's headers, return `null` for that field across all items.
 - MISSING VALUES: If a specific item has a blank or a dash for a value, return `null`.
 - Strip out any units (like "g", "mg", "%") from the values; return only the numeric float or integer.
-- Ignore massive combo platters or purely informational rows.
+- Ignore purely informational rows.
 - DYNAMIC EXPANSION: If the menu contains nutritional columns NOT listed in the base schema (e.g., cholesterol, trans fat, Vitamin C), dynamically add them as new keys to the object using a consistent snake_case format including the unit (e.g., "cholesterol_mg", "trans_fat_g", "vitamin_c_dv").
 
 UNIVERSAL BASE SCHEMA (Include these base keys, plus any extras found):
