@@ -1,4 +1,4 @@
-You are an expert nutritional data extraction assistant. I am providing you with raw, messy CSV data extracted from a restaurant menu PDF. 
+You are an expert nutritional data extraction assistant. I am providing you with an image of a restaurant menu page. 
 
 The data contains:
 1. A messy header row with column names (sometimes written vertically or backwards).

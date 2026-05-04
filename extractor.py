@@ -22,9 +22,9 @@ def get_table_settings():
     table_settings = {
         "vertical_strategy": "lines",
         "horizontal_strategy": "lines",
-        # Cap the left edge (10) AND the right edge (page_width - 10)
-        "explicit_vertical_lines": [10, page_width - 10], 
-        "intersection_tolerance": 15,
+        "explicit_vertical_lines": [10, page_width - 10], #left and right edges of page
+        "intersection_x_tolerance": 500, 
+        "intersection_y_tolerance": 15,
         "snap_tolerance": 5,
     }
     return table_settings
