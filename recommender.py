@@ -119,7 +119,8 @@ def build_custom_meal(df, goal="cutting"):
 
 if __name__ == "__main__":
     # load cleaned data
-    df = pd.read_csv("ai_cleaned_output.csv")
+    df = pd.read_csv("ai_cleaned_output.csv") #ai cleaned data
+    #df = pd.read_csv("vision_cleaned_output.csv") #pure vision
     
     # get both cutting and bulking recommendations for now, buttons later
     # TODO: add ability to change calorie/protein thresholds and top_n from UI

@@ -13,3 +13,6 @@ env/
 # testing outputs, debug imgs
 *debug*
 *output.csv
+
+#old versions
+extractor_vision.py

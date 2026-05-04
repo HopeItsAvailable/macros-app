@@ -115,5 +115,5 @@ def process_pdf_with_ai(pdf_path):
         print(f"Done! Extracted {len(final_df)} items. Check 'ai_cleaned_full_menu.csv'.")
 
 if __name__ == "__main__":
-    #process_pdf_with_ai("sample_menu.pdf")
+    process_pdf_with_ai("sample_menu.pdf")
     show_debug_info_menu()
