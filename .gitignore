@@ -16,3 +16,18 @@ env/
 
 #old versions
 extractor_vision.py
+
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# SQLite databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Environment & binary artifacts
+.env
+*.exe
