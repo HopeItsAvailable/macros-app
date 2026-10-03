@@ -1,0 +1,24 @@
+item_name,category,calories,protein_g,carbs_g,fat_g,sodium_mg,fiber_g,sugar_g
+Chicken Burrito Bowl,Bowls,630,54.0,52.0,22.0,1420,12.0,4.0
+Steak Burrito Bowl,Bowls,610,41.0,52.0,21.0,1380,12.0,4.0
+Barbacoa Salad,Salads,520,38.0,30.0,23.0,1280,10.0,4.0
+Carnitas Burrito,Burritos,890,46.0,102.0,34.0,1890,14.0,5.0
+Double Chicken High Protein Bowl,Bowls,810,86.0,54.0,29.0,1730,13.0,5.0
+Veggie Bowl with Guacamole,Bowls,650,18.0,76.0,32.0,1360,18.0,6.0
+White Rice,Base,210,4.0,40.0,4.0,390,1.0,0.0
+Brown Rice,Base,210,5.0,36.0,5.5,190,4.0,0.0
+Black Beans,Base,130,8.0,22.0,1.5,210,7.0,1.0
+Pinto Beans,Base,130,8.0,21.0,1.5,210,8.0,1.0
+Chicken Portion,Individual Proteins,180,32.0,0.0,7.0,310,0.0,0.0
+Steak Portion,Individual Proteins,150,21.0,1.0,6.0,330,0.0,0.0
+Barbacoa Portion,Individual Proteins,170,24.0,2.0,7.0,530,1.0,0.0
+Carnitas Portion,Individual Proteins,210,23.0,0.0,12.0,450,0.0,0.0
+Sofritas Portion,Individual Proteins,150,8.0,9.0,10.0,560,3.5,5.0
+Fajita Veggies,Veg,20,1.0,5.0,0.0,150,1.0,2.0
+Fresh Tomato Salsa,Sauce,25,0.0,4.0,0.0,550,1.0,3.0
+Roasted Chili-Corn Salsa,Sauce,80,3.0,16.0,1.5,330,3.0,4.0
+Tomatillo Green-Chili Salsa,Sauce,15,0.0,4.0,0.0,260,0.0,2.0
+Tomatillo Red-Chili Salsa,Sauce,30,1.0,4.0,1.0,500,1.0,0.0
+Monterey Jack Cheese,Cheese,110,6.0,1.0,9.0,190,0.0,0.0
+Sour Cream,Sauce,110,2.0,2.0,9.0,30,0.0,2.0
+Guacamole,Sides,230,2.0,8.0,22.0,370,6.0,1.0

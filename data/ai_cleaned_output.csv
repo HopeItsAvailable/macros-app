@@ -1,0 +1,40 @@
+item_name,category,calories,protein_g,carbs_g,fat_g,sodium_mg,fiber_g,sugar_g
+Rotisserie-Style Chicken 6-inch,Sandwiches,310,29.0,38.0,6.0,780,5.0,6.0
+Roast Beef 6-inch,Sandwiches,300,28.0,38.0,5.0,710,5.0,6.0
+Turkey Breast 6-inch,Sandwiches,270,25.0,38.0,4.0,790,5.0,6.0
+Subway Club 6-inch,Sandwiches,300,27.0,39.0,5.0,850,5.0,6.0
+Tuna 6-inch,Sandwiches,430,20.0,37.0,24.0,650,5.0,5.0
+Steak & Cheese 6-inch,Sandwiches,360,26.0,39.0,12.0,990,5.0,6.0
+Meatball Marinara 6-inch,Sandwiches,460,21.0,46.0,21.0,1110,6.0,10.0
+Chicken & Bacon Ranch 6-inch,Sandwiches,570,36.0,40.0,31.0,1310,5.0,7.0
+The Monster Footlong,Sandwiches,1090,75.0,84.0,54.0,3100,10.0,14.0
+The Boss Footlong,Sandwiches,1160,63.0,98.0,59.0,3230,12.0,22.0
+Veggie Delite 6-inch,Sandwiches,200,8.0,37.0,2.5,320,5.0,5.0
+Artisan Italian Bread 6-inch,Bread,160,6.0,34.0,2.0,310,1.0,3.0
+Hearty Multigrain Bread 6-inch,Bread,180,8.0,36.0,2.5,330,3.0,4.0
+Artisan Flatbread 6-inch,Bread,220,7.0,40.0,4.0,380,2.0,2.0
+Mini Italian Bread,Bread,100,4.0,21.0,1.0,190,1.0,2.0
+Oven Roasted Turkey,Individual Proteins,90,17.0,2.0,1.5,490,0.0,1.0
+Rotisserie Chicken Meat,Individual Proteins,110,21.0,1.0,2.5,450,0.0,0.0
+Roast Beef Portion,Individual Proteins,100,19.0,1.0,2.0,390,0.0,1.0
+Steak Portion,Individual Proteins,130,18.0,2.0,6.0,610,0.0,1.0
+Bacon Strips (2),Individual Proteins,80,6.0,1.0,6.0,280,0.0,0.0
+American Cheese,Cheese,40,2.0,1.0,3.5,200,0.0,0.0
+Provolone Cheese,Cheese,50,4.0,0.0,4.0,125,0.0,0.0
+Pepper Jack Cheese,Cheese,50,3.0,0.0,4.0,140,0.0,0.0
+Monterey Cheddar Cheese,Cheese,50,3.0,0.0,4.5,130,0.0,0.0
+Swiss Cheese,Cheese,50,4.0,0.0,4.5,45,0.0,0.0
+Cucumbers,Veg,5,0.2,1.0,0.0,0,0.2,0.6
+Green Peppers,Veg,5,0.2,1.0,0.0,0,0.4,0.6
+Lettuce,Veg,5,0.3,1.0,0.0,0,0.3,0.4
+Red Onions,Veg,5,0.2,1.2,0.0,0,0.3,0.5
+Spinach,Veg,5,0.6,0.7,0.1,15,0.5,0.1
+Tomatoes,Veg,10,0.5,2.0,0.1,5,0.6,1.4
+Pickles,Veg,5,0.1,0.8,0.0,190,0.4,0.1
+Jalapenos,Veg,5,0.1,0.8,0.0,180,0.4,0.1
+Yellow Mustard,Condiment,10,0.6,1.0,0.5,150,0.6,0.0
+MVP Parmesan Vinaigrette,Sauce,60,0.3,1.0,6.0,170,0.0,1.0
+Sweet Onion Teriyaki Sauce,Sauce,30,0.2,7.0,0.0,95,0.0,6.0
+Peppercorn Ranch,Dressing,100,0.5,1.0,11.0,190,0.0,1.0
+Baja Chipotle Sauce,Sauce,70,0.3,1.0,7.0,170,0.0,1.0
+Mayonnaise,Condiment,100,0.1,0.0,11.0,100,0.0,0.0

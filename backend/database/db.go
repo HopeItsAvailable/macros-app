@@ -19,6 +19,8 @@ func InitDB(dbPath string) (*sql.DB, error) {
 	}
 
 	schema := `
+	PRAGMA foreign_keys = ON;
+
 	CREATE TABLE IF NOT EXISTS items (
 		id TEXT PRIMARY KEY,
 		barcode TEXT,

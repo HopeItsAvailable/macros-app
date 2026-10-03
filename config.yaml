@@ -1,0 +1,23 @@
+user:
+  name: "Chef"
+  daily_goals:
+    calories: 2200
+    protein_g: 180
+    carbs_g: 220
+    fat_g: 70
+
+pantry_staples:
+  - "Olive Oil"
+  - "Salt"
+  - "Black Pepper"
+  - "Garlic Powder"
+  - "Soy Sauce"
+  - "Onion Powder"
+  - "Paprika"
+
+default_appliances:
+  - "Stove"
+  - "Oven"
+  - "Air Fryer"
+  - "Microwave"
+  - "Blender"
